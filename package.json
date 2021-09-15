@@ -1,6 +1,6 @@
 {
   "name": "flex-grid-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JamesRobertHugginsNgo/flex-grid.git"
+    "url": "git+https://github.com/JamesRobertHugginsNgo/flex-grid-css.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JamesRobertHugginsNgo/flex-grid/issues"
+    "url": "https://github.com/JamesRobertHugginsNgo/flex-grid-css/issues"
   },
-  "homepage": "https://github.com/JamesRobertHugginsNgo/flex-grid#readme",
+  "homepage": "https://github.com/JamesRobertHugginsNgo/flex-grid-css#readme",
   "devDependencies": {
     "eslint": "^7.32.0"
   },
   "dependencies": {
-    "css-script": "github:JamesRobertHugginsNgo/css-script#v1.0.0"
+    "css-script-js": "github:JamesRobertHugginsNgo/css-script-js#v1.0.2"
   }
 }

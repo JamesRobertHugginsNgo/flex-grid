@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const { render } = require('css-script');
+const { render } = require('css-script-js');
 
 const BREAK_POINTS = [
 	{
