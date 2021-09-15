@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="../flex-grid.css">
+
+	<style>
+		p {
+			margin-bottom: 1rem;
+			margin-top: 0;
+		}
+
+		.flex-grid--root {
+			box-sizing: border-box;
+			padding-left: 1rem;
+			padding-top: 1rem;
+		}
+
+		.flex-grid__col--leaf {
+			box-sizing: border-box;
+			padding-right: 1rem;
+		}
+
+		.bg-1 {
+			background-color: #5EBD3E;
+		}
+
+		.bg-2 {
+			background-color: #FFB900;
+		}
+
+		.bg-3 {
+			background-color: #F78200;
+		}
+
+		.bg-4 {
+			background-color: #E23838;
+		}
+
+		.bg-5 {
+			background-color: #973999;
+		}
+
+		.bg-6 {
+			background-color: #009CDF;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="flex-grid flex-grid--root bg-1">
+		<div class="flex-grid__col flex-grid__col--leaf bg-2">
+			<p>COL</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--6 flex-grid__col--leaf bg-3">
+			<p>COL-6</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--6 flex-grid__col--leaf bg-4">
+			<p>COL-6</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--4 flex-grid__col--leaf bg-5">
+			<p>COL-4</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--4 flex-grid__col--leaf bg-6">
+			<p>COL-4</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--4 flex-grid__col--leaf bg-1">
+			<p>COL-4</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--6 bg-2">
+			<div class="flex-grid">
+				<div class="flex-grid__col flex-grid__col--3 flex-grid__col--leaf bg-4">
+					<p>COL-3</p>
+				</div>
+				<div class="flex-grid__col flex-grid__col--3 flex-grid__col--leaf bg-5">
+					<p>COL-3</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex-grid__col flex-grid__col--6 flex-grid__col--leaf bg-3">
+			<p>COL-6</p>
+		</div>
+
+		<div
+			class="flex-grid__col flex-grid__col--hide flex-grid__col--sm-show flex-grid__col--sm-6 flex-grid__col--leaf bg-3">
+			<p>COL-6</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--sm-6 flex-grid__col--leaf bg-4">
+			<p>COL-6<br>COL-6</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--auto flex-grid__col--leaf bg-6">
+			<p>COL-6</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--auto flex-grid__col--leaf bg-2">
+			<p>COL-6</p>
+		</div>
+	</div>
+
+	<div class="flex-grid flex-grid--root">
+		<div class="flex-grid__col flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--6 flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--6 flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--4 flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--4 flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--4 flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--6">
+			<div class="flex-grid">
+				<div class="flex-grid__col flex-grid__col--3 flex-grid__col--leaf">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante
+						facilisis congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus
+						odio. Curabitur nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada
+						consectetur arcu tincidunt at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus
+						mattis nulla sit amet congue. Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+				</div>
+				<div class="flex-grid__col flex-grid__col--3 flex-grid__col--leaf">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante
+						facilisis congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus
+						odio. Curabitur nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada
+						consectetur arcu tincidunt at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus
+						mattis nulla sit amet congue. Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+				</div>
+			</div>
+		</div>
+		<div class="flex-grid__col flex-grid__col--6 flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+
+		<div class="flex-grid__col flex-grid__col--auto flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+		<div class="flex-grid__col flex-grid__col--auto flex-grid__col--leaf">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas libero orci, ut finibus ante facilisis
+				congue. Nunc lectus diam, vestibulum ut gravida eu, consequat ut magna. Vestibulum nec finibus odio. Curabitur
+				nec sapien ut felis gravida lobortis vel non sem. Ut congue congue urna, malesuada consectetur arcu tincidunt
+				at. Nunc metus massa, ullamcorper vel congue quis, feugiat sed est. Nam dapibus mattis nulla sit amet congue.
+				Morbi malesuada pulvinar bibendum. Ut posuere suscipit nunc ac maximus.</p>
+		</div>
+	</div>
+</body>
+
+</html>
